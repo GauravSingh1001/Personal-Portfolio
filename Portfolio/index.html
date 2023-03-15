@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gaurav Singh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/95d3b5bac6.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <img src="image/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#srevices">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Software Developer</p>
+                <h1>Hii, I'm <span>Gaurav</span> <br> From Bhopal</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/image11.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello, I am an undergraduate student pursuing my bachelor's of Computer Science and Engineering from
+                          Oriental College of Technology Bhopal.
+                          I have always been passionate about technology .I am exited to start my career in IT industry.
+                        I have Skilled in C, C++, Data Structures, Algorithms, Problem Solving, DBMS, OOPS ans Operating System .
+                        I am a Frontend developer skilled in HTML, CSS, JavaScript. 
+                        I like solving problems with code, contribute to open source projects.</p>
+
+                        <div class="tab-titles">
+                            <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class = "tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Software Developer</span><br>Analyze Users need and then design and develop software </li>
+                                <li><span>Web Developer</span><br>Frontend Web Development</li>
+                                <li><span>Debugging</span><br>Finding and Fixing errors in Source code</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> Web Development</span><br>Feontend Development Training at Sync Interns and Private Ltd. </li>
+                                <li><span>DBMS(SQL)</span><br>Training at Coursera </li>
+                                <li><span>Data Structure and Algorithms</span><br>Training at Coursera</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2024</span><br> B.Tech Computer Science and Engineering From OCT Bhopal</li>
+                                <li><span>2019-2020</span><br>Higher Secondary From Satna</li>
+                                <li><span>2018-2019</span><br>High School From Satna</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Services-------------- -->
+
+        <div id="srevices">
+          <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p> I am a front-end developer builds the front-end portion of websites and web applications the part 
+                        users see and interact with. I creates websites
+                         and applications using web languages such 
+                        as HTML, CSS, and JavaScript that allow users to access and interact with the site or app. </p>
+                        <a href="https://www.google.com/">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Softwae Development </h2>
+                    <p> Design, development, maintenance, implementation, support, testing, and documentation
+                         services and other services as may be required to create, enhance, improve, modify,
+                         update, or upgrade software applications as set forth in a Statement of Work.</p>
+                        <a href="https://www.google.com/">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Debugging</h2>
+                    <p>  Software tool that can help the software development process by
+                         identifying coding errors at various stages 
+                        of the operating system or application development.</p>
+                        <a href="https://www.google.com/">Learn more...</a>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+
+<!-- ----------------portfolio-------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+         <div class="Work-list">
+            <div class="Work">
+                <img src="image/work-1.png">
+                <div class="layer">
+                    <h3>Login Authentication</h3>
+                    <p>The login page allows a user to gain access to an application
+                         by entering their username and password or by authenticating using a social media login</p>
+                         <a href="https://user-login-page-gaurav.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="Work">
+                <img src="image/work-2.png">
+                <div class="layer"> 
+                <h3>Quiz App</h3>
+                <p>Easy way to test knowledge. User-friendly app for easy understanding.
+                     Can reduce usage of resources like paper.</p>
+                     <a href="https://quize-app-gaurav.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="Work">
+                <img src="image/work-3.png">
+                <div class="layer"> 
+                <h3>Sorting Visulization </h3>
+                <p>Sorting. Visualizer is a web app for visualizing a bunch of different sorting algorithms 
+                    Like Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, 
+                    Quick Sort, Heap Sort With the functionality of (Speed Control) and (Array Size Control)</p>
+                    <a href="https://sorting-visualizer-gaurav.netlify.app"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!-- ------------contact---------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gauravsin1001@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>91-9770023031</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/gaurav._.singh_01?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gaurav-singh-b1874a221"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/GauravSingh1001"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/qr/TKSW6OBVUUY4H1"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="image/Gaurav.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name"required>
+                    <input type="email" name="Email" placeholder="Your email"required>
+                    <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Made by <i class="fa-solid fa-heart"></i> Gaurav </p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+           sidemenu.style.right = "0";
+        }
+        function closemenu(){
+           sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwF_LkoAZ3FxLKQP0BG3uHMgSWbj9T-xmIIdLoWmUYieSb4TeXeLO2Gi_k3GR7s1XZ3Ug/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            } ,5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
